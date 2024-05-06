@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hames's Harmless Hamburgers</title>
- </title>
-  
     <link rel="icon" href="Logo.png" 
-          type="image/x-icon">
+        type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: Yellow;
+            background-color: #0f0f0f;
             margin: 0;
             padding: 0;
+            color: #fff;
         }
         header {
-            background-color: Black;
+            background-color: #000;
             text-align: center;
             padding: 10px;
         }
         header h1 {
             font-size: 36px;
-            color: Red;
+            color: #ff0000;
             margin: 0;
         }
         .logo {
@@ -36,9 +35,28 @@
             max-height: 100%;
             display: block;
             margin: 0 auto;
+            filter: grayscale(100%) contrast(200%);
+            animation: glitch 1s infinite;
+        }
+        @keyframes glitch {
+            0% {
+                transform: translate(0);
+            }
+            25% {
+                transform: translate(-2px, 2px);
+            }
+            50% {
+                transform: translate(2px, -2px);
+            }
+            75% {
+                transform: translate(-2px, 2px);
+            }
+            100% {
+                transform: translate(0);
+            }
         }
         nav {
-            background-color: Black;
+            background-color: #000;
             text-align: center;
             padding: 10px;
         }
@@ -52,53 +70,45 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: rgb(0, 0, 0);
+            color: #fff;
             font-weight: bold;
             font-size: 20px;
+            animation: glitch 2s infinite;
         }
         section {
             text-align: center;
             padding: 20px;
         }
         .menu {
-            background-color: rgb(0, 0, 0);
-            color: Red;
+            background-color: #000;
+            color: #ff0000;
             padding: 20px;
             margin: 20px auto;
             max-width: 600px;
+            animation: shake 2s infinite;
         }
-	h3 {
-	    font-size: 20px;
-            color: Red;
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-10px);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+            75% {
+                transform: translateX(-10px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        h3, h1, h2 {
+            font-size: 20px;
+            color: #ff0000;
             margin: 0;
-	}
-	h2 {
-	    font-size: 20px;
-            color: Black;
-            margin: 0;
-	}
-	.re {
-	    background-color: rgb(0, 0, 0);
-            color: Red;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 600px;
-        }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: rgb(0, 0, 0);
-            min-width: 160px;
-            z-index: 1;
-            color: red;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
+            animation: glitch 2s infinite;
         }
     </style>
 </head>
@@ -106,55 +116,53 @@
     <header>
         <h1>Hames's Harmless Hamburgers</h1>
         <div class="logo">
-	    <li><a href="index.html"> <img src="Logo.png" alt="Logo"></a><li>
+            <img src="Logo.png" alt="Logo">
         </div>
     </header>
     <nav>
         <ul>
             <li class="dropdown">
-                <a href="index.html">Home</a>
+                <a href="index.html">Homer</a>
                 <div class="dropdown-content">
-                    Here you will Find Our Menu
+                    Here you will Find Our Menoo
                 </div>
             </li>
             <li class="dropdown">
-                <a href="Loc.html">Location</a>
+                <a href="Loc.html">Locashun</a>
                 <div class="dropdown-content">
-                    This is where you can find us
+                    Dis is where you can find uz
                 </div>
             </li>
             <li class="dropdown">
-                <a href="About.html">About Us</a>
+                <a href="About.html">Abowt Us</a>
                 <div class="dropdown-content">
-                    Learn all about us
+                    Lern all about uz
                 </div>
             </li>
             <li class="dropdown">
-                <a href="cont.html">Contact</a>
+                <a href="cont.html">Contac</a>
                 <div class="dropdown-content">
-                    Learn how to Contact us
+                    Lern how to Contac uz
                 </div>
             </li>
             <li class="dropdown">
-                <a href="Kids.html">Kids</a>
+                <a href="Kids.html">Kidz</a>
                 <div class="dropdown-content">
-                    Kids GO HERE OR ELSE
+                    Kidz GO HEER OR ELS
                 </div>
             </li>
         </ul>
     </nav>
     <section>
-        <h2>THis PaGE is UnDeR MAitiANcE</h2>
+        <h2>THiz PAJ iz UnDeR MAitiANcE</h2>
     </section>
     <div class="menu">
         <h1>UnDeR MAitiANcE!</h1>
-	<h3>YoUR n0T suPPoSt tO B3 H3rE</h3>
+        <h3>YoUR n0T suPPoSt tO B3 H3rE</h3>
     </div>
-    </section>
     <div class="menu">
-	<h1> GO AwAY<h1>
-	<h3>I SaID G0!<h3>
+        <h1> GO AwAY</h1>
+        <h3>I SaID G0!</h3>
     </div>
-    </section>
 </body>
 </html>
